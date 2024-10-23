@@ -49,7 +49,7 @@ struct LinkDetector {
                     let state = addressComponents[NSTextCheckingKey.state]
                     let zip = addressComponents[NSTextCheckingKey.zip]
                     let formattedAddress = "\(street ?? "") \(city ?? ""), \(state ?? ""), \(zip ?? "")"
-                    if let street = street {
+                    if street != nil {
                         // Add address attributes and links only if at least street exists
                         attributedText.addAttributes(addressAttributes, range: result.range)
                         attributedText.addAttribute(.link, value: formattedAddress, range: result.range)
