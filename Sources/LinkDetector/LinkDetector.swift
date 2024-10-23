@@ -4,7 +4,7 @@
 import Foundation
 import UIKit
 
-struct LinkDetector {
+public struct LinkDetector {
     
     /// Adds color and underline styling and
     /// - Parameters:
